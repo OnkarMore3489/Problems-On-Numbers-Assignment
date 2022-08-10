@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+void convert(char ch)
+{
+    if(ch>='a' && ch<='z')
+    {
+     printf("%c",(ch-32));
+    }
+     else if(ch>='A' && ch<='Z')
+    {
+     printf("%c",(ch+32));
+    }
+}
+int main()
+{
+    char ch='\0';
+    printf("Enter Character : ");
+    scanf("%c",&ch);
+    convert(ch);
+    return 0;
+}
